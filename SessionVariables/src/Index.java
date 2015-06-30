@@ -54,7 +54,7 @@ public class Index extends HttpServlet {
        }
 
        request.setAttribute("customerList", custs);
-       getServletContext().getRequestDispatcher("index.jsp").forward(request, response);
+       getServletContext().getRequestDispatcher("/index.jsp").forward(request, response);
        
 	}
 

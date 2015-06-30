@@ -16,12 +16,13 @@
 </tr>
 	<c:forEach var="cust" items="${customerList}">
 	<tr>
-		<td><c:out value="${cust.custFirstName }" /></td>
-		<td><c:out value="${cust.custLastName }" /></td>
+		
+		<td><a href="<c:url value="CustomerInfo?custId=${cust.customerId}"/>"><c:out value="${cust.custFirstName }"/></a></td>
+		<td><c:out value="${cust.custLastName }"/></td>
 		<td><c:out value="${cust.custEmail }" /></td>
 	</tr>
 	</c:forEach>
-
 </table>
+
 </body>
 </html>

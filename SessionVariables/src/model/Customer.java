@@ -10,7 +10,7 @@ import java.math.BigDecimal;
  * 
  */
 @Entity
-@Table(name="DEMO_CUSTOMERS", schema="TESTUSER")
+@Table(name="DEMO_CUSTOMERS", schema="GUITARSHOP")
 @NamedQuery(name="Customer.findAll", query="SELECT c FROM Customer c")
 public class Customer implements Serializable {
 	private static final long serialVersionUID = 1L;
